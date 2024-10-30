@@ -14,6 +14,7 @@
        <p>price: {{ product.price }}</p>
        <p>description: {{ product.description }}</p>
        <p>supplier_id: {{ product.supplier_id }}</p>
+       <button v-on:click="$emit('showProduct', product)">More info</button>
      </div>
     </div>
   </template>
